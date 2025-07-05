@@ -1,10 +1,8 @@
 import { Request, Response, Router } from 'express';
-import { PrismaClient } from '../generated/prisma/client';
-
+import { PrismaClient } from '@prisma/client'; 
 const router = Router();
 const prisma = new PrismaClient();
 
-// GET /api/movies?search=...&genre=...
 router.get('/', async (req: Request, res: Response) => {
   try {
     const { search, genre } = req.query;
@@ -31,7 +29,6 @@ router.get('/', async (req: Request, res: Response) => {
   }
 });
 
-// GET /api/movies/:id
 router.get('/:id', async (req: Request, res: Response) => {
   try {
     const id = parseInt(req.params.id);
