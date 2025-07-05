@@ -4,9 +4,9 @@
   "main": "dist/server.js",
   "scripts": {
     "dev": "ts-node-dev --respawn src/server.ts",
-    "start": "ts-node-dev app.ts",
+    "start": "node dist/server.js",
     "build": "prisma generate && tsc",
-    "postinstall": "prisma generate"
+    "prepare": "prisma generate"
   },
   "dependencies": {
     "@prisma/client": "^6.11.1",
