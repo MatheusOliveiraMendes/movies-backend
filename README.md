@@ -4,6 +4,17 @@ API developed in **Node.js + Express** to serve movie data, integrated with a **
 
 ---
 
+# ⚠️ Important Notice
+
+> **⚠️ Please Note:**  
+> This backend is hosted on a **free-tier Render server**, which may **enter hibernation after a period of inactivity**.  
+>  
+> The **initial request** might take **15–30 seconds** to respond while the server **wakes up**.  
+>  
+> After that, the API will respond normally.
+
+---
+
 ## 🚀 Technologies Used
 
 - [Node.js](https://nodejs.org/)
@@ -141,3 +152,5 @@ npx ts-node scripts/import-movies.ts
 ## 🧾 License
 
 MIT © [Matheus Mendes]
+
+# Link Site: https://moviesfront.netlify.app
